@@ -735,3 +735,25 @@ footer {
   font-weight: bold;
   margin-bottom: 5px;
 }
+.scroll-to-top-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: #d4aa70;
+  cursor: pointer;
+}
+.fa-angles-up {
+  color: #ff0bab;
+  font-weight: bold;
+  font-size: 20px;
+}
+.hidden {
+  display: none;
+}

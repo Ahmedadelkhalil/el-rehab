@@ -22,3 +22,21 @@ smallPhotosRed.forEach((img) => {
     });
   });
 });
+
+let scrollTop = document.querySelector(".scroll-to-top-btn");
+
+window.onscroll = () => {
+  if (window.scrollY >= 600) {
+    scrollTop.classList.remove("hidden");
+  } else {
+    scrollTop.classList.add("hidden");
+  }
+};
+
+scrollTop.onclick = () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+};
