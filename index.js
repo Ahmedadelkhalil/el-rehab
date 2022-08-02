@@ -40,3 +40,14 @@ scrollTop.onclick = () => {
     behavior: "smooth",
   });
 };
+
+let lin = document.querySelectorAll("ul li a");
+
+lin.forEach((a) => {
+  a.addEventListener("click", (q) => {
+    lin.forEach((a) => {
+      a.classList.remove("active");
+      q.target.classList.add("active");
+    });
+  });
+});

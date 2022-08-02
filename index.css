@@ -8,6 +8,9 @@
   --gray-color: hsl(0deg 3% 51%);
   --shop-now: "Shrikhand", cursive;
 }
+html {
+  scroll-behavior: smooth;
+}
 ::-webkit-scrollbar {
   width: 13px;
 }
@@ -611,16 +614,37 @@ ul li a:hover::after {
   align-items: center;
   margin-bottom: 50px;
 }
-.department div {
+.department .dep-1,
+.department .dep-2,
+.department .dep-3 {
   width: 250px;
   height: 480px;
 }
-.department div img {
+.scaling {
+  position: relative;
   width: 250px;
   height: 375px;
+  overflow: hidden;
   margin-bottom: 15px;
+}
+.scaling img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.department div img {
+  position: absolute;
+  width: 250px;
+  height: 375px;
   border-top-right-radius: 150px;
   border-top-left-radius: 150px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
 }
 .up-title {
   margin-bottom: 30px;
@@ -699,7 +723,7 @@ footer {
   font-size: 28px;
   font-weight: bold;
   border: 2px solid white;
-  text-transform: capitalize;
+  text-transform: uppercase;
   width: fit-content;
   padding: 5px;
   margin-bottom: 10px;
