@@ -51,3 +51,54 @@ lin.forEach((a) => {
     });
   });
 });
+
+let gear = document.querySelector(".fa-gear");
+let optBox = document.querySelector(".option-box");
+
+gear.onclick = function () {
+  gear.classList.toggle("fa-spin");
+  optBox.classList.toggle("show");
+};
+// ........................................................................
+
+let textOne = document.querySelector(".first-top-text");
+let textTwo = document.querySelector(".middle-text");
+let textThree = document.querySelector(".bottom-text");
+let textFour = document.querySelector(".get-touch");
+let textFive = document.querySelector(".text-video");
+let textSix = document.querySelector(".fa-angles-up");
+
+let colorChange = document.querySelectorAll(".avai-col li");
+
+if (window.localStorage.getItem("color")) {
+  colorChange.forEach((li) => {
+    li.addEventListener("click", (C) => {
+      li.classList.remove("active-col-font");
+      C.target.classList.add("active-col-font");
+    });
+    textOne.style.color = window.localStorage.getItem("color");
+    textTwo.style.color = window.localStorage.getItem("color");
+    textThree.style.color = window.localStorage.getItem("color");
+    textFour.style.color = window.localStorage.getItem("color");
+    textFive.style.color = window.localStorage.getItem("color");
+    textSix.style.color = window.localStorage.getItem("color");
+  });
+}
+
+colorChange.forEach((li) => {
+  li.addEventListener("click", (C) => {
+    colorChange.forEach((li) => {
+      li.classList.remove("active-col-font");
+      li.classList.remove("ball-above");
+      C.target.classList.add("active-col-font");
+      C.target.classList.add("ball-above");
+      window.localStorage.setItem("color", C.target.dataset.color);
+      textOne.style.color = C.target.dataset.color;
+      textTwo.style.color = C.target.dataset.color;
+      textThree.style.color = C.target.dataset.color;
+      textFour.style.color = C.target.dataset.color;
+      textFive.style.color = C.target.dataset.color;
+      textSix.style.color = C.target.dataset.color;
+    });
+  });
+});
