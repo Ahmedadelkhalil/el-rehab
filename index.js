@@ -102,3 +102,14 @@ colorChange.forEach((li) => {
     });
   });
 });
+
+let bars = document.querySelector(".fa-bars");
+let xmark = document.querySelector(".fa-xmark");
+let burgerItems = document.querySelector(".burger-items");
+
+bars.onclick = () => {
+  burgerItems.classList.add("show");
+};
+xmark.onclick = () => {
+  burgerItems.classList.remove("show");
+};

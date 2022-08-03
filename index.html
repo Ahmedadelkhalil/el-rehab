@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
+    <title>EL-REHAB</title>
+    <link rel="shortcut icon" href="images/logo/2.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -41,8 +42,17 @@
         <li data-color="#4caf50"></li>
       </ul>
     </div>
+    <div class="burger-items">
+      <i class="fa-solid fa-xmark"></i>
+       <ul class="links">
+            <li><a href="#home" class="active home">home</a></li>
+            <li><a href="#shop">shop</a></li>
+            <li><a href="#products">products</a></li>
+            <li><a href="#about">about</a></li>
+          </ul>
+    </div>
     <div class="container">
-      <header>
+      <header id="home">
         <a href="#" class="logo">El-REHAB</a>
         <nav>
           <ul class="links">
@@ -52,6 +62,9 @@
             <li><a href="#about">about</a></li>
           </ul>
         </nav>
+        <div class="burger-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
       </header>
       <div class="part-one">
         <div class="text">
@@ -80,7 +93,7 @@
         <p class="author">-Sir Alexis-</p>
       </div>
       <!-- ........................................................................ -->
-      <div class="swiper" id="shop">
+       <div class="swiper desktop-swiper" id="shop">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="img-one"><img src="images/2.jpg" alt="" /></div>
@@ -95,6 +108,42 @@
           <div class="swiper-slide">
             <div class="img-four"><img src="images/200.jpg" alt="" /></div>
             <div class="img-five"><img src="images/20.jpg" alt="" /></div>
+            <div class="img-nine"><img src="images/7.jpg" alt="" /></div>
+          </div>
+          ...
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <!-- ................................................................................ -->
+      <div class="swiper desktop-mobile" id="shop">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide">
+        <div class="img-one"><img src="images/2.jpg" alt="" /></div>
+        </div>
+          <div class="swiper-slide">
+            <div class="img-two"><img src="images/100.jpg" alt="" /></div>
+          </div>
+            <div class="swiper-slide">
+            <div class="img-three"><img src="images/19.jpg" alt="" /></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-six"><img src="images/31.jpg" alt="" /></div>
+          </div>
+          <div class="swiper-slide">
+          <div class="img-seven"><img src="images/28.jpg" alt="" /></div>
+          </div>
+          <div class="swiper-slide">                      
+            <div class="img-eight"><img src="images/4.jpg" alt="" /></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-four"><img src="images/200.jpg" alt="" /></div>
+          </div>
+          <div class="swiper-slide">
+          <div class="img-five"><img src="images/20.jpg" alt="" /></div>
+          </div>
+          <div class="swiper-slide">          
             <div class="img-nine"><img src="images/7.jpg" alt="" /></div>
           </div>
           ...
@@ -435,4 +484,4 @@
       });
     </script>
   </body>
-</html>
+</html
