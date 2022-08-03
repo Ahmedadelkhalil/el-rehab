@@ -1063,13 +1063,16 @@ footer {
   }
   .info h2 {
     margin-bottom: 20px;
-    width: 315px;
+    width: 300px;
     text-align: center;
   }
   .made-by {
     width: 315px;
   }
   .made-by p {
-    font-size: 15px;
+    font-size: 13px;
+  }
+  .owining {
+    font-size: 13px;
   }
 }
